@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #ffffff;
+    --secondary-light-color: #cdd2d3;
+    --dark1-color: #222222;
+    --dark2-color: #050505;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+    color: var(--secondary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+/* eso debe ser con a pero no me va */
+.navbar li:hover {
+    border-bottom: var(--primary-color) solid;
+}
+
+.hero {
+    background-color: var(--dark2-color);
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 700px;
+}
+
+/* Perfil */
+
+span{
+    color: var(--primary-color);
+}
+
+.perfil div{
+    position: absolute;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+}
+
+.rectagunlo{
+    width: 320px;
+    height: 550px;
+    background-color: var(--dark1-color);
+    opacity: 0.7;
+    z-index: 10;
+    top: 70px;
+}
+
+.circulo{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: solid 16px var(--primary-color);
+    z-index: 21;
+    top: 120px;
+
+}
+
+.circulo-trans{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: solid 30px var(--primary-color);
+    opacity: .3;
+    z-index: 19;
+    top:90px;
+}
+
+.perfil-img{
+   top: 134px;
+   z-index: 20;
+}
+
+.perfil-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.perfil-text{
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+    top: 380px;
+    z-index: 11 ;
+
+}
+
+.perfil-text-2{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    top: 475px;
+    z-index: 11;
+}
+
+.perfil-text-3{
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    top: 570px;
+    z-index: 11;
+}
+
+.perfil-text-3 a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.perfil-text-3 a:hover{
+    border-bottom: var(--primary-color) solid;
+}
+
+.contact-icon{
+    top: 520px;
+    z-index: 11;
+}
+
+.contact-icon img{
+    width: 30px;
+    margin: 0 10px;
+}
+
+.contact-icon img:hover{
+    transform: scale(1.2);
+    
+}
+
+
+/* Briefcase */
+
+.briefcase {
+   background-color: var(--dark1-color);
+   justify-content: center;
+
+}
+
+.briefcase-section h2{
+    padding: 40px;
+    text-align: center;
+}
+
+.briefcase-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.briefcase-grid img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.briefcase-grid img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* Skills */
+
+section.skills {
+    padding-top: 50px;
+    background-color: var(--dark1-color);
+}
+
+.skill  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+    gap: 270px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+.skills h2 {
+   padding: 90px;
+}
+
+.skills img {
+    width: 90px;
+    height: 90px; 
+}
+
+.knowledge,
+.tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, auto));
+    justify-content: center;
+    gap: 50px;
+}
+
+/* tool tip */
+
+.skill h3 {
+    background-color: var(--dark2-color);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    width: 100px;
+    opacity: 0;
+    transform: translate(0px, -100px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.knowledge>div:hover h3,
+.tools>div:hover h3 {
+    opacity: 1;
+    transform: translate(0px, -150px);
+}
