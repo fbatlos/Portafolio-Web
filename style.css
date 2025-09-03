@@ -24,8 +24,8 @@ body {
 }
 
 .navbar ul {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 
 .navbar a {
@@ -33,10 +33,10 @@ body {
     padding: 10px;
     text-decoration: none;
     color: white;
-    margin: 20px;
+    margin: 10px;
 }
-/* eso debe ser con a pero no me va */
-.navbar li:hover {
+
+.navbar a:hover {
     border-bottom: var(--primary-color) solid;
 }
 
@@ -156,32 +156,33 @@ span{
 /* Briefcase */
 
 .briefcase {
-   background-color: var(--dark1-color);
-   justify-content: center;
-
+    background-color: var(--dark1-color);
 }
 
 .briefcase-section h2{
     padding: 40px;
     text-align: center;
+ 
 }
 
 .briefcase-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    gap:15px;
     width: 90%;
-    margin: 0 auto;
-
+    margin:0 auto;
+  
 }
 
-.briefcase-grid img{
+.briefcase-grid img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.2s ease;
+    cursor: pointer;
+
 }
 
-.briefcase-grid img:hover{
+.briefcase-grid img:hover {
     transform: scale(1.1);
 }
 
@@ -240,4 +241,40 @@ section.skills {
 .tools>div:hover h3 {
     opacity: 1;
     transform: translate(0px, -150px);
+}
+
+
+/* about me */
+
+.about {
+    background-color: var(--dark2-color);
+}
+.about-flex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 100px; 
+}
+
+.about p {
+    font-size:1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: var(--secondary-light-color);
+}
+
+.social {
+    border-left: var(--secondary-color) 5px solid;
+    padding-left: 50px;
+}
+
+.social img {
+    width: 60px;
+    margin: 10px;
+    z-index: 1;
+}
+
+.social img:hover {
+    transform: scale(1.2);
 }
