@@ -26,54 +26,65 @@
 <body>
 
     <header>
-    
         <div class="hero">
             <div class="navbar">
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#briefcase">Portafolio</a></li>
+                        <li><a href="#about-me">Sobre mi</a></li>
                     </ul>
                 </nav>
     
             </div>
-            <img src="./img/descarga.gif" alt="">
-        </div>
-    
-        <div class="perfil">
-            <div class="rectagunlo"></div>
-            <div class="circulo-trans"></div>
-            <div class="circulo"></div>
-            <div class="perfil-img"><img src="./img/perfilImg.jpg" alt=""></div>
-    
-            <div class="perfil-text">Francisco José Batista <p> de los Santos</div>
-            <div class="perfil-text-2"><span>Desarrollo de Aplicaciones Multiplataforma</span></div>
-    
-            <div class="contact-icon">
-    
-                <a href="https://github.com/fbatlos"><img src="./img/github.svg" alt=""></a>
-                <a href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0"><img src="./img/linkedin.svg" alt=""></a>
-                <a href="#NONE"><img src="./img/message.svg" alt=""></a>
-    
-            </div>
-            <div class="perfil-text-3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
-    
         </div>
     
     </header>
 
+    <section class="perfil-section" id="inicio">
+        <div class="perfil-card">
+            <div class="avatar-container">
+                <div class="rectagunlo"></div>
+                <div class="circulo-trans"></div>
+                <div class="circulo"></div>
+                <div class="perfil-img"><img src="./img/perfilImg.jpg" alt="Foto de Francisco José Batista"></div>
+            </div>
+    
+            <div class="perfil-info">
+                <h1 class="perfil-text">Francisco José Batista <br> de los Santos</h1>
+                <h2 class="perfil-text-2"><span>Desarrollo de Aplicaciones Multiplataforma</span></h2>
+        
+                <div class="contact-icon">
+                    <a href="https://github.com/fbatlos" target="_blank"><img src="./img/github.svg" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0" target="_blank"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="mailto:franbati1705@gmail.com"><img src="./img/message.svg" alt="Email"></a>
+                </div>
+                
+                <div class="perfil-text-3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
+            </div>
+        </div>
+        
+        <img src="./img/descarga.gif" alt="" class="bg-gif">
+    </section>
+    
     <section class="briefcase" id="briefcase">
     
         <div class="briefcase-section">
             <h2><span>Briefcase |</span> Portafolio</h2>
     
-            <div class="briefcase-grid">
-    
-                <div><img src="./img/tfg-libreria.png" alt="tfg"></div>
-                <div><img src="./img/demostracionSwagger.png" alt="swagger api"></div>
-                <div><img src="./img/jwt-learning.png" alt="jwt"></div>
-    
+           <div class="briefcase-grid">
+                <a href="https://github.com/fbatlos/KotlinLibreriaKMP" target="_blank">
+                    <img src="./img/tfg-libreria.png" alt="tfg">
+                </a>
+
+                <a href="https://github.com/fbatlos/API_TFG_Libreria" target="_blank">
+                    <img src="./img/demostracionSwagger.png" alt="swagger api">
+                </a>
+
+                <a href="https://github.com/fbatlos/SeguridadJWT_Kotlin" target="_blank">
+                    <img src="./img/jwt-learning.png" alt="jwt">
+                </a>
+
             </div>
         </div>
     
@@ -215,30 +226,35 @@
     
     </section>
     
-    <section class="about">
+    <section class="about" id="about-me">
     
         <div class="about-flex">
             <div class="about-info">
-                <p>Soy un joven programador apasionado por la tecnología y el
-                desarrollo de software. Formación en Desarrollo de
-                Aplicaciones Multiplataforma (Actualmente estoy en ingeniería informática), con experiencia en
-                Python, Java, Spring Boot, Kotlin, SQL, Git, HTML, CSS y
-                Jetpack Compose. Destaco por mi capacidad de análisis,
-                resolución de problemas y rápida adaptación a nuevas
-                tecnologías.</p>
-                <p><br>Proactivo, con buenas habilidades de
-                comunicación y trabajo en equipo.</p>
+                <h2>About me</h2>
+
+                <p>Desarrollador backend junior (DAM) y estudiante de Ingeniería Informática
+                     en la UHU, con experiencia en Java, Spring Boot, Kotlin y SQL. En mis 
+                     prácticas en el Departamento de Robótica de la Universidad de Cádiz mantuve 
+                     scripts para dispositivos embebidos usando Git. Busco una oportunidad en 
+                     desarrollo backend (Java, C# o Kotlin) para aportar mis conocimientos en APIs
+                      REST y bases de datos mientras continúo mi crecimiento profesional y 
+                      académico.</p>
+
             </div>
     
             <div class="social">
                 <a href="https://github.com/fbatlos"><img src="./img/github.svg" alt=""></a>
                  <a href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0"><img src="./img/linkedin.svg" alt=""></a>
-                <a href="#NONE"><img src="./img/message.svg" alt=""></a>
+                <a href="mailto:franbati1705@gmail.com"><img src="./img/message.svg" alt=""></a>
             </div>
         </div>
     
     
     </section>
     
+    <footer>
+        <p>&copy; 2026 Francisco José Batista de los Santos. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
