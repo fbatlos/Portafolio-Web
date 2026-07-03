@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https:/https://fbatlos.github.io/Portafolio-Web/sitemap.xml
