@@ -1,260 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Francisco José Batista de los Santos - Portafolio</title>
-    <meta name="description" content="Portafolio web de Francisco José Batista de los Santos (Paco Batista), desarrollador DAM y programador.">
+    <title>Francisco José Batista de los Santos | Desarrollador Backend Junior</title>
+    <meta name="description" content="Portafolio de Francisco José Batista de los Santos (Paco Batista): desarrollador backend junior (DAM) con experiencia en Java, Spring Boot, Kotlin y SQL.">
     <meta name="author" content="Francisco José Batista de los Santos">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="V9QgSiKUlnUY0foyw1AYDyR2bO1hayaC3dq7-XpefSc" />
+    <meta name="theme-color" content="#0b0d10">
+    <meta name="google-site-verification" content="V9QgSiKUlnUY0foyw1AYDyR2bO1hayaC3dq7-XpefSc">
+    <link rel="canonical" href="https://fbatlos.github.io/Portafolio-Web/">
+    <link rel="icon" type="image/jpeg" href="./img/perfilImg.jpg">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Francisco José Batista de los Santos - Portafolio" />
-    <meta property="og:description" content="Portafolio web de Paco Batista, desarrollador DAM y programador." />
-    <meta property="og:url" content="https://fbatlos.github.io/Portafolio-Web/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./img/preview.jpg" />
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Francisco José Batista de los Santos | Desarrollador Backend Junior">
+    <meta property="og:description" content="Desarrollador backend junior (DAM) con experiencia en Java, Spring Boot, Kotlin y SQL.">
+    <meta property="og:url" content="https://fbatlos.github.io/Portafolio-Web/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:image" content="https://fbatlos.github.io/Portafolio-Web/img/perfilImg.jpg">
+    <meta name="twitter:card" content="summary">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="hero">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#briefcase">Portafolio</a></li>
-                        <li><a href="#about-me">Sobre mi</a></li>
-                    </ul>
-                </nav>
-    
-            </div>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a class="brand" href="#inicio" aria-label="Inicio">Paco <span>Batista</span></a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="menu" class="nav-menu" aria-label="Principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#conocimientos">Conocimientos</a></li>
+                    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    
     </header>
 
-    <section class="perfil-section" id="inicio">
-        <div class="perfil-card">
-            <div class="avatar-container">
-                <div class="rectagunlo"></div>
-                <div class="circulo-trans"></div>
-                <div class="circulo"></div>
-                <div class="perfil-img"><img src="./img/perfilImg.jpg" alt="Foto de Francisco José Batista"></div>
-            </div>
-    
-            <div class="perfil-info">
-                <h1 class="perfil-text">Francisco José Batista <br> de los Santos</h1>
-                <h2 class="perfil-text-2"><span>Desarrollo de Aplicaciones Multiplataforma</span></h2>
-        
-                <div class="contact-icon">
-                    <a href="https://github.com/fbatlos" target="_blank"><img src="./img/github.svg" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0" target="_blank"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="mailto:franbati1705@gmail.com"><img src="./img/message.svg" alt="Email"></a>
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Desarrollador backend junior · DAM</p>
+                    <h1>Francisco José <span>Batista de los Santos</span></h1>
+                    <p class="lead">Construyo APIs REST y aplicaciones multiplataforma con Java, Spring Boot y Kotlin. Estudiante de Ingeniería Informática en la UHU.</p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+                        <a class="btn btn-ghost" href="#contacto">Contactar</a>
+                    </div>
+
+                    <ul class="social-list" aria-label="Redes">
+                        <li><a href="https://github.com/fbatlos" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="./img/github.svg" alt="" width="28" height="28"></a></li>
+                        <li><a href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="./img/linkedin.svg" alt="" width="28" height="28"></a></li>
+                        <li><a href="mailto:franbati1705@gmail.com" aria-label="Enviar correo"><img src="./img/message.svg" alt="" width="28" height="28"></a></li>
+                    </ul>
                 </div>
-                
-                <div class="perfil-text-3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
-            </div>
-        </div>
-        
-        <img src="./img/descarga.gif" alt="" class="bg-gif">
-    </section>
-    
-    <section class="briefcase" id="briefcase">
-    
-        <div class="briefcase-section">
-            <h2><span>Briefcase |</span> Portafolio</h2>
-    
-           <div class="briefcase-grid">
-                <a href="https://github.com/fbatlos/KotlinLibreriaKMP" target="_blank">
-                    <img src="./img/tfg-libreria.png" alt="tfg">
-                </a>
 
-                <a href="https://github.com/fbatlos/API_TFG_Libreria" target="_blank">
-                    <img src="./img/demostracionSwagger.png" alt="swagger api">
-                </a>
-
-                <a href="https://github.com/fbatlos/SeguridadJWT_Kotlin" target="_blank">
-                    <img src="./img/jwt-learning.png" alt="jwt">
-                </a>
-
-            </div>
-        </div>
-    
-    </section>
-    
-    
-    <section class="skills">
-        <div class="skill">
-    
-            <div class="knowledge-part">
-    
-                <h2><span>Knowledge |</span> Conocimientos</h2>
-                <div class="knowledge">
-    
-                    <div>
-                        <img src="./img/file_type_kotlin_icon_130487.png" alt="">
-                        <h3>Kotlin</h3>
+                <div class="hero-photo">
+                    <div class="photo-ring">
+                        <img src="./img/perfilImg.jpg" alt="Foto de Francisco José Batista de los Santos" width="260" height="260">
                     </div>
-    
-                    <div>
-                        <img src="./img/java.png" alt="">
-                        <h3>Java</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/spring-icon.png" alt="">
-                        <h3>Spring Boot</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/jwt-logo.png" alt="">
-                        <h3>JWT</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/csharp_original_logo_icon_146578.png" alt="">
-                        <h3>C#</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/python.png" alt="">
-                        <h3>Python</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/jetpackcompose-original-8x.png" alt="">
-                        <h3>Jetpack Compose</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/junit-logo.png" alt="">
-                        <h3>JUnit</h3>
-                    </div>
-                    
-                    <div>
-                        <img src="./img/mockito-icon.jpeg" alt="">
-                        <h3>Mockito</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/file_type_mongo_icon_130383.png" alt="">
-                        <h3>Mongo BD</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/mysql-database.png" alt="">
-                        <h3>MySQL</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/postgresql_original_logo_icon_146391.png" alt="">
-                        <h3>Postgres</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/markdown.png" alt="">
-                        <h3>Markdown</h3>
-                    </div>
-    
-    
                 </div>
-    
             </div>
-    
-            <div class="tools-part">
-    
-                <h2><span>Dev Tools |</span>Herramientas</h2>
-                <div class="tools">
-    
-                    <div>
-                        <img src="./img/github-icon.png" alt="">
-                        <h3>GitHub</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/git-icon.png" alt="">
-                        <h3>Git</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/vsc-icon.png" alt="">
-                        <h3>Visual Studio</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/intellij-idea-logo.png" alt="">
-                        <h3>IntelliJ</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/Android_Studio_icon.png" alt="">
-                        <h3>Android Studio</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/postman-logo.png" alt="">
-                        <h3>Postman</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/insomnia-logo.png" alt="">
-                        <h3>Insomnia</h3>
-                    </div>
-    
-                    <div>
-                        <img src="./img/render.jpeg" alt="">
-                        <h3>Render</h3>
-                    </div>
-    
-    
+        </section>
+
+        <!-- Sobre mí -->
+        <section class="section" id="sobre-mi">
+            <div class="container narrow">
+                <h2 class="section-title"><span>01</span> Sobre mí</h2>
+                <p class="about-text">Desarrollador backend junior (DAM) y estudiante de Ingeniería Informática en la UHU, con experiencia en Java, Spring Boot, Kotlin y SQL.</p>
+                <p class="about-text">En mis prácticas en el Departamento de Robótica de la Universidad de Cádiz mantuve scripts para dispositivos embebidos usando Git.</p>
+                <p class="about-text">Busco una oportunidad en desarrollo backend (Java, C# o Kotlin) para aportar mis conocimientos en APIs REST y bases de datos mientras continúo mi crecimiento profesional y académico.</p>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="section section-alt" id="proyectos">
+            <div class="container">
+                <h2 class="section-title"><span>02</span> Proyectos</h2>
+
+                <div class="project-grid">
+
+                    <article class="card">
+                        <a class="card-media" href="https://github.com/fbatlos/KotlinLibreriaKMP" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="./img/tfg-libreria.png" alt="" loading="lazy" width="600" height="340">
+                        </a>
+                        <div class="card-body">
+                            <h3>TFG · App de librería multiplataforma</h3>
+                            <p>Aplicación de librería lista para ejecutarse en Android, Apple y escritorio con Kotlin Multiplatform.</p>
+                            <ul class="tags">
+                                <li>Kotlin</li><li>Multiplatform</li><li>Compose</li>
+                            </ul>
+                            <a class="card-link" href="https://github.com/fbatlos/KotlinLibreriaKMP" target="_blank" rel="noopener noreferrer">Ver código en GitHub <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <a class="card-media" href="https://github.com/fbatlos/API_TFG_Libreria" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="./img/demostracionSwagger.png" alt="" loading="lazy" width="600" height="340">
+                        </a>
+                        <div class="card-body">
+                            <h3>TFG · API REST de la librería</h3>
+                            <p>API backend del TFG, documentada con Swagger, que da servicio a la aplicación multiplataforma.</p>
+                            <ul class="tags">
+                                <li>Kotlin</li><li>Spring Boot</li><li>REST</li><li>Swagger</li>
+                            </ul>
+                            <a class="card-link" href="https://github.com/fbatlos/API_TFG_Libreria" target="_blank" rel="noopener noreferrer">Ver código en GitHub <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <a class="card-media" href="https://github.com/fbatlos/SeguridadJWT_Kotlin" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                            <img src="./img/jwt-learning.png" alt="" loading="lazy" width="600" height="340">
+                        </a>
+                        <div class="card-body">
+                            <h3>Seguridad con JWT en Kotlin</h3>
+                            <p>Proyecto de aprendizaje sobre autenticación y autorización con JSON Web Tokens.</p>
+                            <ul class="tags">
+                                <li>Kotlin</li><li>JWT</li><li>Seguridad</li>
+                            </ul>
+                            <a class="card-link" href="https://github.com/fbatlos/SeguridadJWT_Kotlin" target="_blank" rel="noopener noreferrer">Ver código en GitHub <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
                 </div>
-    
-            </div>
-    
-        </div>
-    
-    
-    
-    
-    </section>
-    
-    <section class="about" id="about-me">
-    
-        <div class="about-flex">
-            <div class="about-info">
-                <h2>About me</h2>
 
-                <p>Desarrollador backend junior (DAM) y estudiante de Ingeniería Informática
-                     en la UHU, con experiencia en Java, Spring Boot, Kotlin y SQL. En mis 
-                     prácticas en el Departamento de Robótica de la Universidad de Cádiz mantuve 
-                     scripts para dispositivos embebidos usando Git. Busco una oportunidad en 
-                     desarrollo backend (Java, C# o Kotlin) para aportar mis conocimientos en APIs
-                      REST y bases de datos mientras continúo mi crecimiento profesional y 
-                      académico.</p>
+                <p class="more"><a href="https://github.com/fbatlos?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos mis repositorios <span aria-hidden="true">→</span></a></p>
+            </div>
+        </section>
 
+        <!-- Conocimientos -->
+        <section class="section" id="conocimientos">
+            <div class="container">
+                <h2 class="section-title"><span>03</span> Conocimientos</h2>
+
+                <h3 class="group-title">Lenguajes, frameworks y bases de datos</h3>
+                <ul class="chips">
+                    <li><img src="./img/file_type_kotlin_icon_130487.png" alt="" width="32" height="32" loading="lazy">Kotlin</li>
+                    <li><img src="./img/java.png" alt="" width="32" height="32" loading="lazy">Java</li>
+                    <li><img src="./img/spring-icon.png" alt="" width="32" height="32" loading="lazy">Spring Boot</li>
+                    <li><img src="./img/jwt-logo.png" alt="" width="32" height="32" loading="lazy">JWT</li>
+                    <li><img src="./img/csharp_original_logo_icon_146578.png" alt="" width="32" height="32" loading="lazy">C#</li>
+                    <li><img src="./img/python.png" alt="" width="32" height="32" loading="lazy">Python</li>
+                    <li><img src="./img/jetpackcompose-original-8x.png" alt="" width="32" height="32" loading="lazy">Jetpack Compose</li>
+                    <li><img src="./img/junit-logo.png" alt="" width="32" height="32" loading="lazy">JUnit</li>
+                    <li><img src="./img/mockito-icon.jpeg" alt="" width="32" height="32" loading="lazy">Mockito</li>
+                    <li><img src="./img/file_type_mongo_icon_130383.png" alt="" width="32" height="32" loading="lazy">MongoDB</li>
+                    <li><img src="./img/mysql-database.png" alt="" width="32" height="32" loading="lazy">MySQL</li>
+                    <li><img src="./img/postgresql_original_logo_icon_146391.png" alt="" width="32" height="32" loading="lazy">PostgreSQL</li>
+                    <li><img src="./img/markdown.png" alt="" width="32" height="32" loading="lazy">Markdown</li>
+                </ul>
+
+                <h3 class="group-title">Herramientas</h3>
+                <ul class="chips">
+                    <li><img src="./img/github-icon.png" alt="" width="32" height="32" loading="lazy">GitHub</li>
+                    <li><img src="./img/git-icon.png" alt="" width="32" height="32" loading="lazy">Git</li>
+                    <li><img src="./img/vsc-icon.png" alt="" width="32" height="32" loading="lazy">Visual Studio</li>
+                    <li><img src="./img/intellij-idea-logo.png" alt="" width="32" height="32" loading="lazy">IntelliJ IDEA</li>
+                    <li><img src="./img/Android_Studio_icon.png" alt="" width="32" height="32" loading="lazy">Android Studio</li>
+                    <li><img src="./img/postman-logo.png" alt="" width="32" height="32" loading="lazy">Postman</li>
+                    <li><img src="./img/insomnia-logo.png" alt="" width="32" height="32" loading="lazy">Insomnia</li>
+                    <li><img src="./img/render.jpeg" alt="" width="32" height="32" loading="lazy">Render</li>
+                </ul>
             </div>
-    
-            <div class="social">
-                <a href="https://github.com/fbatlos"><img src="./img/github.svg" alt=""></a>
-                 <a href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0"><img src="./img/linkedin.svg" alt=""></a>
-                <a href="mailto:franbati1705@gmail.com"><img src="./img/message.svg" alt=""></a>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section section-alt" id="contacto">
+            <div class="container narrow contact">
+                <h2 class="section-title"><span>04</span> Contacto</h2>
+                <p class="about-text">¿Tienes una oferta o quieres hablar de un proyecto? Escríbeme y te respondo lo antes posible.</p>
+                <div class="hero-actions center">
+                    <a class="btn btn-primary" href="mailto:franbati1705@gmail.com">franbati1705@gmail.com</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/francisco-josé-batista-de-los-santos-4873212b0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="btn btn-ghost" href="https://github.com/fbatlos" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
             </div>
-        </div>
-    
-    
-    </section>
-    
-    <footer>
-        <p>&copy; 2026 Francisco José Batista de los Santos. Todos los derechos reservados.</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Francisco José Batista de los Santos. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var menu = document.getElementById('menu');
+            var year = document.getElementById('year');
+            if (year) { year.textContent = new Date().getFullYear(); }
+            if (!toggle || !menu) { return; }
+
+            function setOpen(open) {
+                menu.classList.toggle('open', open);
+                toggle.setAttribute('aria-expanded', String(open));
+                toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+            }
+
+            toggle.addEventListener('click', function () {
+                setOpen(!menu.classList.contains('open'));
+            });
+            menu.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') { setOpen(false); }
+            });
+        })();
+    </script>
 </body>
 </html>
