@@ -33,7 +33,7 @@
 
     <header class="site-header">
         <div class="container nav-bar">
-            <a class="brand" href="#inicio" aria-label="Inicio">Paco <span>Batista</span></a>
+            <a class="brand notranslate" translate="no" href="#inicio" aria-label="Inicio">Paco <span>Batista</span></a>
 
             <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
                 <span></span><span></span><span></span>
@@ -46,6 +46,32 @@
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#conocimientos">Conocimientos</a></li>
                     <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+                    <li class="lang-item notranslate" translate="no">
+                        <label class="sr-only" for="lang">Idioma / Language</label>
+                        <select id="lang" aria-label="Idioma / Language">
+                            <option value="es">🌐 Español</option>
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                            <option value="de">Deutsch</option>
+                            <option value="it">Italiano</option>
+                            <option value="pt">Português</option>
+                            <option value="ca">Català</option>
+                            <option value="eu">Euskara</option>
+                            <option value="gl">Galego</option>
+                            <option value="nl">Nederlands</option>
+                            <option value="pl">Polski</option>
+                            <option value="ro">Română</option>
+                            <option value="sv">Svenska</option>
+                            <option value="tr">Türkçe</option>
+                            <option value="ru">Русский</option>
+                            <option value="uk">Українська</option>
+                            <option value="ar">العربية</option>
+                            <option value="hi">हिन्दी</option>
+                            <option value="zh-CN">中文 (简体)</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -58,7 +84,7 @@
             <div class="container hero-grid">
                 <div class="hero-text">
                     <p class="eyebrow">Desarrollador backend junior · DAM</p>
-                    <h1>Francisco José <span>Batista de los Santos</span></h1>
+                    <h1 class="notranslate" translate="no">Francisco José <span>Batista de los Santos</span></h1>
                     <p class="lead">Construyo APIs REST y aplicaciones multiplataforma con Java, Spring Boot y Kotlin. Estudiante de Ingeniería Informática en la UHU.</p>
 
                     <div class="hero-actions">
@@ -152,7 +178,7 @@
                 <h2 class="section-title"><span>03</span> Conocimientos</h2>
 
                 <h3 class="group-title">Lenguajes, frameworks y bases de datos</h3>
-                <ul class="chips">
+                <ul class="chips notranslate" translate="no">
                     <li><img src="./img/file_type_kotlin_icon_130487.png" alt="" width="32" height="32" loading="lazy">Kotlin</li>
                     <li><img src="./img/java.png" alt="" width="32" height="32" loading="lazy">Java</li>
                     <li><img src="./img/spring-icon.png" alt="" width="32" height="32" loading="lazy">Spring Boot</li>
@@ -169,7 +195,7 @@
                 </ul>
 
                 <h3 class="group-title">Herramientas</h3>
-                <ul class="chips">
+                <ul class="chips notranslate" translate="no">
                     <li><img src="./img/github-icon.png" alt="" width="32" height="32" loading="lazy">GitHub</li>
                     <li><img src="./img/git-icon.png" alt="" width="32" height="32" loading="lazy">Git</li>
                     <li><img src="./img/vsc-icon.png" alt="" width="32" height="32" loading="lazy">Visual Studio</li>
@@ -200,6 +226,57 @@
     <footer class="site-footer">
         <p>&copy; <span id="year">2026</span> Francisco José Batista de los Santos. Todos los derechos reservados.</p>
     </footer>
+
+    <div id="google_translate_element" hidden></div>
+
+    <script>
+        /* Language selector: drives the Google Translate website widget through its "googtrans" cookie. */
+        (function () {
+            var select = document.getElementById('lang');
+            var SOURCE = 'es';
+
+            function readLang() {
+                var m = document.cookie.match(/(?:^|;\s*)googtrans=\/[^/]+\/([^;]+)/);
+                return m ? decodeURIComponent(m[1]) : SOURCE;
+            }
+
+            function setCookie(value, days) {
+                var host = location.hostname;
+                var exp = days ? '; max-age=' + days * 86400 : '; max-age=0';
+                document.cookie = 'googtrans=' + value + '; path=/' + exp;
+                document.cookie = 'googtrans=' + value + '; path=/; domain=' + host + exp;
+            }
+
+            if (select) {
+                var current = readLang();
+                if (select.querySelector('option[value="' + current + '"]')) { select.value = current; }
+
+                select.addEventListener('change', function () {
+                    if (select.value === SOURCE) {
+                        setCookie('', 0);
+                    } else {
+                        setCookie('/' + SOURCE + '/' + select.value, 365);
+                    }
+                    location.reload();
+                });
+            }
+
+            window.googleTranslateElementInit = function () {
+                new google.translate.TranslateElement({
+                    pageLanguage: SOURCE,
+                    autoDisplay: false
+                }, 'google_translate_element');
+            };
+
+            /* Only load Google's script once a translation has been chosen. */
+            if (readLang() !== SOURCE) {
+                var s = document.createElement('script');
+                s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                s.async = true;
+                document.body.appendChild(s);
+            }
+        })();
+    </script>
 
     <script>
         (function () {
